@@ -92,11 +92,84 @@
 
     .header {
         display: grid;
-        grid-template-columns: minmax(450px, 2fr) minmax(350px, 1fr);
-        grid-template-rows: 1fr 1fr;
-
-        
+        grid-template-columns: minmax(450px, 3fr) minmax(350px, 2fr);
+        grid-template-rows: 2fr 5fr;
+        align-items: center;
+        padding: 20px 40px !important;
+        background-color: #f0f0f0;        
     }
+
+    .searchbar {
+        display: flex;
+        align-items: center;
+    }
+
+    .searchbar-input {
+        border-radius: 1rem;
+        height: 2rem;
+        width: clamp(300px, 100%, 600px);
+        background-color: #bccbde;
+        border: none;
+        font-size: 1rem;
+        padding-left: 10px;
+
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .current-user-pic {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+    }
+
+    .current-user-main-pic {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+    }
+
+    .current-user p {
+        font-weight: bold;
+        text-align: left;
+        font-size: 14px;
+        margin: 5px 10px;
+    }
+
+    .current-user .current-user-title {
+        font-size: 20px;
+        text-align: left;
+        font-weight: bold;
+    }
+
+
+    .actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+    }
+
+    button {
+        color: #f0f0f0;
+        padding: 10px 30px;
+        background-color: #0ea5e9;
+        border-radius: calc(20px + 20px);
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+    }
+
 
     .mainframe {
         display: grid;
@@ -104,7 +177,7 @@
         grid-template-rows: minmax(250px, 1fr) minmax(250px, 1fr);
         border-top: 5px solid lightgray !important;
         background-color: #bccbde;
-        width: 100%;
+        
     }
 
     .projects {
@@ -178,7 +251,7 @@
     }
     */
     .text p {
-        color: rgb(175, 175, 175);
+        color: rgb(129, 129, 129);
         font-weight: normal;
         font-size: 14px;
         padding-left: 5px;
@@ -187,7 +260,7 @@
     }
 
     .announce-card .text p {
-        color: rgb(175, 175, 175);
+        color: rgb(129, 129, 129);
         font-weight: normal;
         font-size: 11px;
         padding: 0 15px;
@@ -222,6 +295,53 @@
     .card-icons {
         padding: 0 10px;
     }
+
+    .trending-card {
+        position: relative;
+        background-color: #FFFFFF;
+        color: black;
+        text-align: left;
+        border-radius: 12px;
+        box-shadow: 0px 4px 8px rgb(0,0,0,0.1);
+        overflow: hidden;
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+        min-width: 200px;
+        padding: 10px 10px 10px 10px !important;
+
+    }
+
+    .trending-block {
+        display: flex;
+        flex-basis: 200px;
+    }
+
+    .trending-block img {
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+        align-self: flex-start;
+    }
+
+    .trending-user {
+        padding: 0 !important;
+        margin: auto;
+        margin-left: 15px;
+    }
+
+    .trending-user p {
+        color: rgb(129, 129, 129);
+        font-weight: normal;
+        font-size: 12px;
+    }
+
+    .trending-user .trending-user-title {
+        font-size: 12px;
+        text-align: left;
+        color: black;
+        font-weight: bold;
+    }
+
 
     /* .footer {
         padding: 10px;
